@@ -35,7 +35,7 @@ jobs:
     if: github.ref == 'refs/heads/main' || github.event.inputs.environment == 'staging'
     runs-on: ubuntu-latest
     environment:
-      name: staging
+      name: 'staging'
       url: https://staging.example.com
 
     steps:
@@ -54,7 +54,7 @@ jobs:
     if: github.ref == 'refs/heads/main' || github.event.inputs.environment == 'production'
     runs-on: ubuntu-latest
     environment:
-      name: production
+      name: 'production'
       url: https://example.com
 
     steps:
